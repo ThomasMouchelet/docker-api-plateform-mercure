@@ -43,14 +43,14 @@ env_dev:
 	ENV=dev
 
 .PHONY: file_env_npm
-file_env_npm: 
+file_env_npm: ## Migrer les variables d'environement dans le .env
 	cd app && envsubst < $(file_env_npm_name) > .env && cd ..
 
 .PHONY: dev
-dev: env_dev file_env_npm node_modules up install migrations fixtures 
+dev: env_dev file_env_npm node_modules up install migrations fixtures ## -- Initialiser le projet en développement
 
 .PHONY: prod
-prod: env_prod file_env_npm up install migrations
+prod: env_prod file_env_npm up install migrations ## -- Initialiser le projet en production
 
 .PHONY: reset
 reset: ## Delete all volumes and all images

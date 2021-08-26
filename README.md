@@ -13,6 +13,8 @@
 
 # GET STARTED
 
+> make help
+
 > make dev ENV=dev
 
 > make prod ENV=prod
