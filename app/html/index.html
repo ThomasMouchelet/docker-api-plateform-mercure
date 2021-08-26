@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nodejs container</h1>
+
+    <p>Show recipes :</p>
+    <ul id="logs">
+        
+    </ul>
+
+    <script>
+        const url = new URL('http://127.0.0.1:8001/.well-known/mercure', window.origin);
+
+        url.searchParams.append('topic', 'http://127.0.0.1:8000/api/recipes/{id}');
+        url.searchParams.append('topic', 'https://127.0.0.1:8000/api/recipes/{id}');
+
+        const eventSource = new EventSource(url);
+
+        eventSource.onmessage = e => {
+            console.log("data : ", event.data);
+            const data = JSON.parse(event.data)
+            console.log("data JSON: ", data);
+            const li = document.createElement('li')
+            li.innerText = data.title
+            logs.append(li)
+        } 
+    </script>
+</body>
+</html>
