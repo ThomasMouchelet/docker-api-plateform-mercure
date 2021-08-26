@@ -1,6 +1,6 @@
-Inline-style: 
-![alt text](https://d31ezp3r8jwmks.cloudfront.net/P4LMkQbCoYdT6NiE8ZjETEbw)
-Inline-style: 
+
+![alt text](https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png)
+ 
 ![alt text](https://www.nilobstat.com/media/1020/logo-symfony.png?width=250)
 
 # CONFIG
