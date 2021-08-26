@@ -8,8 +8,8 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/html/index.html')
 })
 
-
 //Launch listening server on port 8081
 app.listen(3000, function () {
   console.log('app listening on port 3000! with nodemon')
+  console.log(process.env)
 })
