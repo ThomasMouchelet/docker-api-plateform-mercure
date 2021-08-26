@@ -1,5 +1,6 @@
-<img src="https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png" alt="drawing" width="50%"/>
-<img src="https://www.nilobstat.com/media/1020/logo-symfony.png" alt="drawing" width="50%"/>
+
+<img src="https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png" alt="drawing" width="40%"/>
+<img src="https://www.nilobstat.com/media/1020/logo-symfony.png" alt="drawing" width="40%"/>
 
 # CONFIG
 - php 8.0
