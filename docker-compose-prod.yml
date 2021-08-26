@@ -67,4 +67,4 @@ services:
       - MERCURE_EXTRA_DIRECTIVES=cors_allowed_origins *
       - SERVER_NAME=":80"
     ports:
-      - 3001:80
+      - 8001:80
